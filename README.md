@@ -115,3 +115,19 @@ GetStart.uploadDatabases();
 ```
 
 请确保在运行程序之前已正确配置和引入所需的依赖项。
+
+## 建表sql
+```sql
+create table data_recod
+(
+    `id`         int primary key auto_increment comment 'id',
+    `uid`        char(12) comment '用户uid',
+    `name`       varchar(10) comment '奖品名',
+    `gacha_type` char(3) comment '卡池信息',
+    `item_type`  char(2) comment '奖品类型[武器/角色]',
+    `rank_type`  char(1) comment '奖品等级[3/4/5]',
+    `data_id`    char(30) unique comment '原神服务器返回的id',
+    `gain_time`  datetime comment '抽到奖品的时间',
+    `up_time` timestamp default current_timestamp comment '上传到我的数据库的时间'
+)CHARACTER SET utf8;
+```
