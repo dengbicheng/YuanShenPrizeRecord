@@ -8,11 +8,11 @@ public class ItemRecord {
 
     private String name;    // 奖品名
 
-    @JsonProperty("gacha_type") // 通过注解类更改映射名
+    @JsonProperty("gacha_type") // 通过注解 更改映射名
     private String gachaType;  // 卡池信息 武器池302/up池301/常驻池200/新手池100
 
     @JsonProperty("item_type")
-    private String itemType;    // 奖品类型  角色/人物
+    private String itemType;    // 奖品类型  角色/武器
 
     @JsonProperty("rank_type")
     private String rankType;    // 奖品等级 5,4,3
@@ -92,14 +92,14 @@ public class ItemRecord {
 
     @Override
     public String toString() {
-        return "ItemRecord{" +
-                "uid='" + uid + '\'' +
-                ", name='" + name + '\'' +
-                ", gachaType='" + gachaType + '\'' +
-                ", itemType='" + itemType + '\'' +
-                ", rankType='" + rankType + '\'' +
-                ", id='" + id + '\'' +
-                ", time='" + time + '\'' +
+        return "{" +
+                "uid:'" + uid + '\'' +
+                ", name:'" + name + '\'' +
+                ", gachaType:'" + gachaType + '\'' +
+                ", itemType:'" + itemType + '\'' +
+                ", rankType:'" + rankType + '\'' +
+                ", id:'" + id + '\'' +
+                ", time:'" + time + '\'' +
                 '}';
     }
 }

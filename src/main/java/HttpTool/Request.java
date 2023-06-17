@@ -7,20 +7,18 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 public class Request {
-    private static String url;
     private static String userAgent;
     static {
         Properties properties = new Properties();
         try{
-            properties.load(new FileInputStream("src/url.properties"));
-            url = properties.getProperty("url1");
+            properties.load(new FileInputStream("src/main/url.properties"));
             userAgent = properties.getProperty("user-Agent");
         }catch (IOException e){
             System.out.println(e);
         }
     }
 
-    public static String get() throws IOException {
+    public static String get(String url) throws IOException {
         Document document = Jsoup.connect(url)
                 // 设置请求头
                 .header("User-Agent", userAgent)
