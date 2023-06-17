@@ -6,7 +6,7 @@ import java.util.Properties;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException, SQLException {
         Properties properties = new Properties();
-        properties.load(new FileInputStream("src/main/url.properties"));
+        properties.load(new FileInputStream("src/main/resources/url.properties"));
         String url = properties.getProperty("url");
 
         long start = System.currentTimeMillis();

@@ -17,7 +17,7 @@ public class Connect {
     static {
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("src/main/Druid.properties"));
+            properties.load(new FileInputStream("src/main/resources/Druid.properties"));
             // 创建连接池
             dataSource = DruidDataSourceFactory.createDataSource(properties);
             // 获取连接

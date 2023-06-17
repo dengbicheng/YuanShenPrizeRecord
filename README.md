@@ -1,7 +1,27 @@
 # YuanShenPrizeRecord
 
 YuanShenPrizeRecord 是一个用于获取原神游戏的抽卡记录数据的项目。它提供了一个简单的方式来获取指定卡池类型的抽卡记录数据，并支持将数据上传到数据库和分析概率。
-
+## 项目结构
+```
+YuanShenPrizeRecord
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   ├── HttpTool                      # HTTP 工具包
+│   │   │   ├── Connect                       # 数据库连接类
+│   │   │   ├── GetStart                      # 启动类
+│   │   │   ├── ItemRecord                    # 抽卡记录数据模型
+│   │   │   ├── JointUrl                      # URL 拼接类
+│   │   │   ├── JsonAnalysis                  # JSON 数据解析类
+│   │   │   ├── LotteryAnalysis               # 抽卡记录概率分析类
+│   │   │   └── Main                          # 主类
+│   │   └── resources
+│   │       ├── Druid.properties              # 数据库连接配置文件
+│   │       ├── url.properties                # URL 配置文件         
+├── .gitignore                                # Git 忽略文件配置
+├── pom.xml                                   # Maven 项目配置文件
+└── README.md                                 # 项目说明文档
+```
 ## 功能特性
 
 - 连接指定的 URL 获取原神游戏的抽卡记录数据
