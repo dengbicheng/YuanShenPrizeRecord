@@ -1,7 +1,14 @@
 # YuanShenPrizeRecord
 
 YuanShenPrizeRecord 是一个用于获取原神游戏的抽卡记录数据的项目。它提供了一个简单的方式来获取指定卡池类型的抽卡记录数据，并支持将数据上传到数据库和分析概率。
+
+## 项目地址
+
+[Github](https://github.com/dengbicheng/YuanShenPrizeRecord)
+[Gitee](https://gitee.com/deng-bicheng/YuanShenPrizeRecord)
+
 ## 项目结构
+
 ```
 YuanShenPrizeRecord
 ├── src
